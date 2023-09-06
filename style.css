@@ -1,0 +1,404 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.img-full {
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header {
+    background-color:#EEF1F1;
+    padding: 0.5em 0;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+    
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #FF3149;
+}
+
+h2{
+    text-align: center;
+}
+
+h2 a {
+    
+    color: black;
+    font-weight: 700;
+}
+
+h2 a:hover,
+h2 a:focus {
+    color: #FF3149;
+}
+
+
+.p-about {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+
+.p-one {
+    color: #FF3149;
+}
+
+.p-two {
+    color: gray;
+}
+
+.current-page {
+    border-bottom: 1px solid black;
+}
+
+.current-page:hover {
+    color: #FF3149;
+}
+
+.article-recent{
+    display: flex;
+    flex-direction: column;
+    border: 2px #FF3149 solid;
+    background-color: #EEF1F1;
+    padding: 15px;
+    margin-bottom: 2em;
+}
+
+.article-recent1{
+    display: flex;
+    flex-direction: column;
+    border: 2px #FF3149 solid;
+    background-color: #EEF1F1;
+    padding: 15px;
+    margin-bottom: 1em;
+}
+
+.buy-recent {
+    background-color: white;
+    margin-left: 1.5rem;
+}
+
+.article-title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.buy-title {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-main1 {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+.my-form{
+    padding: 20px;
+    background-color: #EEF1F1;
+    border: 2px #FF3149 solid;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], 
+.my-form textarea, 
+.my-form input[type="number"],
+.my-form input[type="email"] {
+    padding: 8px;
+    width: 95%;
+}
+
+.button{
+    background-color:dimgray;
+    color:white;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 15px;
+    /* border: none; */
+}
+
+.button:hover{
+    background-color:#FF3149;
+    color:black;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.happy-clients {
+    text-align: center;
+    color: #FF3149;
+    
+}
+
+
+.block{
+    text-align: justify;
+    float: left;
+    width: 90%;
+    border: 2px #FF3149 solid;
+    padding: 10px;
+    margin: 1rem;
+    /* box-sizing: border-box; */
+}
+
+
+button {
+    background-color:dimgray;
+    color:white;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+button:hover,
+button:focus {
+    background-color:#FF3149;
+    color:black;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.contact-us {
+    text-align: center;
+    color: #FF3149;
+}
+
+.contact-us-li {
+    list-style: none;
+    text-align: justify;
+}
+
+.contact-us-text {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us-text:hover {
+    color: #FF3149;
+}
+
+
+footer {
+    background-color:#EEF1F1;
+    color: #FF3149;
+    text-align: center;
+    /*border-top: 0.25px black solid;*/
+    padding: 3em 0;
+}
+
+
+@media (min-width:680px) {
+    
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 45%;
+        /*background-color: aqua;*/
+    }
+
+    aside {
+        width: 50%;
+        min-width: 200px;
+        /* margin-left: 1em; */
+        /*background-color: blue;*/
+    }
+
+}
+
+@media (max-width: 680px){
+
+
+    nav ul{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    nav li{
+        margin: .5em 0;
+    }
+
+    .current-page{
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent1 {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .article-recent-main {
+        width: 45%;
+    }
+
+    .article-recent-main1 {
+        width: 50%;
+    }
+
+    .article-recent-secondary {
+        width: 45%;
+    }
+
+    .article-recent-secondary1 {
+        width: 45%;
+    }
+
+    .article-img {
+        width: 100%;
+        min-height: 150px;
+        object-fit: cover;
+        
+       
+
+        /*we can use object position to crop it from that position*/
+        object-position:right;
+    }
+
+
+    .article-img {
+        order: -2;
+        margin: 1rem;
+    }
+
+    .article-info {
+        order: -1;
+        margin: 1rem;
+    }
+
+    .buy-title {
+        margin: 2rem;
+    }
+
+    .home-buy {
+        margin-top: 2.5em;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .buy-recent {
+        margin-left: 0;
+    }
+
+    .article-title{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+
+}
+
+
+@media (min-width:680px) {
+    
+    .block {
+        float: none;
+        min-width: 30%;
+        padding: 10px;
+        margin: 1rem;
+        border: 2px #FF3149 solid;
+    }
+
+    .block-buy {
+        width: 97%;
+        margin-left: 0;
+    }
+
+    .happy-clients {
+        text-align: center;
+    }
+
+    .contact-us-img {
+        width: 45%;
+        float:left;
+    }
+
+    .contact-us-content {
+        width: 45%;
+        float:right;
+        margin-top: 0;
+    }
+}
+
